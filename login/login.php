@@ -9,14 +9,15 @@
 </head>
 <body>
 
-<?php 
+<?php
+include "../conn/conn.php";
 if(isset($_POST['Entrar']))
 {
     $nombre = $_POST['nombre'];
     $contra = $_POST['contra'];
     include '../conn/conn.php';
-    $existe = "select nombre from accesocliente where nombre like '$nombre' and password like '$contra'";
-    $consulta = mysqli_query($comprobar, $conn);
+    $existe = "SELECT nombre FROM accesocliente WHERE nombre LIKE '$nombre' AND pass LIKE '$contra'";
+    $consulta = mysqli_query($conn,$existe);
     $dato = mysqli_fetch_array($consulta);
     $cambia = $dato["nombre"];
     echo "<hr size == 10 color =fffff width =100% aling = left>";
@@ -28,7 +29,7 @@ if(isset($_POST['Entrar']))
     mysqli_close($conn);
 }else{
 ?>
-    <form action="" method="post">
+    <form action="<?= $_SERVER['PHP_SELF'] ?>" method="POST">
             <i class="bi bi-person"></i>
             <br>
             Nombre:<br>
