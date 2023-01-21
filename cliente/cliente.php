@@ -8,7 +8,9 @@
 </head>
 <body>
     <form action="">
-            Nombre(s):
+            Nombre(s): <input type="text" name="" id=""> <br>
+            Apellido Paterno: <input type="text" name="" id=""> <br>
+            apellido Materno: 
     </form>
 </body>
 </html>
