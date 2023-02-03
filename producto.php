@@ -11,12 +11,6 @@
 
 <body>
 
-    <ul>
-      <li>
-      
-      </li>
-    </ul>
-
     <?php include '../conn/menu.php';?>
     <?php
     if (isset($_POST['Guardar'])) //preguntamos si el usuario presiono el boton guardar
@@ -48,40 +42,36 @@
     } else {
 
     ?>
-    <i class="bi bi-search"></i>
-        <section id="derecha">
+
+
+
+    <div class="container">
+      <div class="row">  
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              
             <h1>Agregar Nuevo Producto</h1>
             <form action="<?= $_SERVER['PHP_SELF'] ?>" method="POST">
-
-                <labe>Descripcion:</labe><input type="text" name="fld_descripcion"><br>
+                <div class="form-group">
+                    <labe>Descripcion:</labe><br>
+                    <input type="text" name="fld_descripcion">
+                </div>
                 <label>Precio Compra $ </label><input type="text" name="fld_pc"><br>
                 <label>Precio Venta $ </label><input type="text" name="fld_pv"><br>
                 <input type="submit" name="Guardar" value="Guardar" onclick=mostrar()>
             </form>
         <?php  } ?>
-        </section>
+        </div>
+        </div>
+        </div>
+        <div class="col-lg-8">
+          columna de 
+        </div>
+        </div>
+        </div>
 
-        <button>sw</button onclick="mostrar()">
 
-
-
-  <table>
-  <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-</table>
 
 <script src="../js/jquery-3.6.0.min.js"></script>
 <script src="../js/sweetalert/sweetalert.js"></script>
