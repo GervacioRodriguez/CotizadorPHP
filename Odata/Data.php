@@ -1,11 +1,27 @@
 <?php
-header('content-type: application/json; charset=utf-8');
 header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
 header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
-require('../conn/conn.php');
+header('Content-Type: application/json');
+require_once('conn/conn.php');
+
+$Conectar = conexion();
 
 switch($_GET['accion']){
+
+    case'ListarCliente':    
+        $MySQLClientes = "SELECT nombre,tel1 FROM cliente";
+        $datos = mysqli_query($Conectar,$clientes);
+        $resultado = mysqli_fetch_all($datos, MYSQLI_ASSOC); 
+        echo json_encode($resultado);      
+        mysqli_close($Conectar);
+        break;
+    case'InsertarCliente': 
+        break;
+    case'ModificarCliente':
+        break;
+    case'EliminarCliente':
+        break;
     case 'listarProducto':
         $listar = "SELECT * FROM producto";
         $respuesta = mysqli_query($conn,$listar);

@@ -1,18 +1,14 @@
 <?php
-$server ="127.0.0.1";
+
+//variables
+function conexion(){
+$servidor = "127.0.0.1";
+$user = "root";
+$psw = "";
 $db = "cotizador";
-$user ="root";
-$pass ="";
 $port ="3310";
-
-$conn = mysqli_connect($server,$user,$pass,$db,$port);
-
-if(!$conn){
-    echo "conexion";
+$conn = mysqli_connect($servidor,$user,$psw,$db,$port);
+mysqli_set_charset($conn,'utf8');
+return $conn;
 }
-else{
-    //echo "Exito";
-}
-
-
 ?>

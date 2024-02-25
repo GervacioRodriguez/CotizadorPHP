@@ -11,7 +11,7 @@
     <a href="/index.html">Inicio</a>
     <a href="/productos/administracion.html">Lista Productos</a>
 
-    <form action="" method="post">
+    <!-- <form action="" method="post">
         <label for="">Correo Electronico</label>
         <br>
         <input type="text" name="email" id="">
@@ -21,7 +21,23 @@
         <input type="password" name="" id="">
         <br>
         <button id="Enviar">Entrar</button>
+    </form> -->
+
+    <form id="Cliente">
+        <label for="">Nombre</label>
+        <input type="text" name="" id="Nombre"> <br>
+        <label for="">Telefono</label>
+        <input type="text" name="" id="Telefono">
     </form>
 
+    <table>
+        <thead>
+            <th>nombre</th>
+            <th>telefono</th>
+        </thead>
+        <tbody id="clientes"></tbody>
+    </table>
+
+    <script src="/js/Cliente.js"></script>
 </body>
 </html>
