@@ -5,6 +5,6 @@ header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
 header('Content-Type: application/json');
 require_once('conn/conn.php');
 //aqui se debera hacer la prueba de que si existe el usuario
-
+$comprobar = mysqli_connect("SELECT * FROM usuarios WHERE email= AND password=  ");
 
 ?>
