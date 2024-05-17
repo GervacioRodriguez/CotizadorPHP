@@ -1,4 +1,6 @@
 /*creamos la conexion a la web api*/
+const Ingresar = ''
+
 const ListarClientes = 'https://localhost/CotizadorPHP/Odata/Data.php?accion=ListarCliente';
 
 ListarClientes();

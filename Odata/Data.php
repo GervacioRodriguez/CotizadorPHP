@@ -7,6 +7,7 @@ require_once('conn/conn.php');
 
 $Conectar = conexion();
 
+
 switch($_GET['accion']){
 
     case'ListarCliente':    
