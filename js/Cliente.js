@@ -3,7 +3,12 @@ ingresar();
 //const ListarClientes = 'https://localhost/CotizadorPHP/Odata/Data.php?accion=ListarCliente';
 
 function ingresar(){
-    alert('alcanzado');
+    //alert('alcanzado');
+    Swal.fire({
+        title: "Buen trabajo!",
+        text: "Oprime el boton",
+        icon: "success"
+      });
 
 }
 
