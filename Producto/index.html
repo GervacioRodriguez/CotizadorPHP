@@ -50,12 +50,11 @@
                     <div class="card-body">
                         <h5 class="card-title">Ingresar Producto</h5>
                         <form id="FrmPeoducto">
-                    
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="Descripcion" placeholder="name@example.com">
-                                <label for="floatingInput">Descripcion</label>
-                              </div>
-
+                        <div class="mb-3">
+                            <label for="" class="form-label">Descripcion:</label> 
+                            <input class="form-control" type="text" name="" id="nameproducto">
+                        </div>
+                          
                         <div class="mb-3">
                             <label for="" class="form-label">Precio</label> 
                             <input class="form-control" type="text" name="" id="nameprecio">
@@ -71,7 +70,14 @@
                     <div class="card-body">
                         <h5 class="card-title">Lista de Productos</h5>
                         <table>
-
+                            <thead>
+                                <th>
+                                    <tb>Producto</tb>
+                                    <tb>Precio</tb>
+                                    <tb>Existencia</tb>
+                                </th>
+                            </thead>
+                            <tbody id="tbproductos"></tbody>
                         </table>
 
                     </div>
