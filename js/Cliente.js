@@ -1,7 +1,12 @@
 /*creamos la conexion a la web api*/
-const Ingresar = ''
+ingresar();
+//const ListarClientes = 'https://localhost/CotizadorPHP/Odata/Data.php?accion=ListarCliente';
 
-const ListarClientes = 'https://localhost/CotizadorPHP/Odata/Data.php?accion=ListarCliente';
+function ingresar(){
+    alert('alcanzado');
+
+}
+
 
 ListarClientes();
 
