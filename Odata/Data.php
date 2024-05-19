@@ -4,6 +4,7 @@ header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Ac
 header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
 header('Content-Type: application/json');
 require_once('conn/conn.php');
+require_once('FuncionesPhp/Funciones.php');
 
 $Conectar = conexion();
 
@@ -16,6 +17,7 @@ switch($_GET['accion']){
         $resultado = mysqli_fetch_all($datos, MYSQLI_ASSOC); 
         echo json_encode($resultado);      
         mysqli_close($Conectar);
+        ValidarPrecios();
         break;
     case'InsertarCliente': 
         break;
