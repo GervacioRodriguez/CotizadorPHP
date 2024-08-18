@@ -10,5 +10,5 @@ $port ="3310";
 $conn = mysqli_connect($servidor,$user,$psw,$db,$port);
 mysqli_set_charset($conn,'utf8');
 return $conn;
-}
+}//U0SCx)=cbv@o
 ?>

@@ -1,13 +1,5 @@
 <?php
 require_once('../php/Cors.php');
-// header('Access-Control-Allow-Origin: *');
-// header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
-// header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
-// header('Content-Type: application/json');
-
-
-
-
 require_once('../conn/conn.php');
 require_once('../FuncionesPhp/Funciones.php');
 
@@ -19,7 +11,7 @@ switch($_GET['accion']){
         $MySQLProductos = "SELECT descripcion,pv,existencias FROM producto";
         $datos = mysqli_query($Conectar,$MySQLProductos);
         $resultado = mysqli_fetch_all($datos,MYSQLI_ASSOC); 
-        echo json_encode($resultado);      
+        echo json_encode(["data"=>$resultado]);      
         mysqli_close($Conectar);
         break;
     case'InsertarProducto': 

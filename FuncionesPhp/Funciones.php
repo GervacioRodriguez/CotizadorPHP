@@ -15,4 +15,10 @@ function ValidarUsuario(){
 
 }
 
+function GenerarCodigoBarras(){
+
+}
+
+
+
 ?>

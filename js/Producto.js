@@ -1,5 +1,5 @@
 //Guardar productos
-RecuperarProducto();
+//RecuperarProducto();
 document.getElementById("boton1").addEventListener("click",() => AgregarProducto());
 
 function RecuperarProducto(){
