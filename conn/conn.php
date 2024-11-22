@@ -1,14 +1,17 @@
 <?php
 
-//variables
-function conexion(){
-$servidor = "127.0.0.1";
-$user = "root";
-$psw = "";
-$db = "cotizador";
-$port ="3310";
-$conn = mysqli_connect($servidor,$user,$psw,$db,$port);
-mysqli_set_charset($conn,'utf8');
-return $conn;
-}//U0SCx)=cbv@o
+class Conectar{
+
+    public static function Conexion(){
+    $servidor = "127.0.0.1";
+    $user = "root";
+    $psw = "";
+    $db = "cotizador";
+    $port ="3310";
+    $conn = new  mysqli($servidor,$user,$psw,$db,$port);
+    $conn->query("SET NAMES 'utf8'");
+    return $conn;
+}
+
+}
 ?>
