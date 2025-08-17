@@ -11,7 +11,8 @@
         </tr>
     </thead>
     <tbody>
-        <?php foreach ($clientes as $cliente): ?>
+        <?php 
+        foreach ($clientes as $cliente): ?>
             <tr>
                 <td><?= $cliente['id'] ?></td>
                 <td><?= $cliente['nombre'] ?></td>

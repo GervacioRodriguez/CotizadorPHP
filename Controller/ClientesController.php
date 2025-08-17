@@ -9,12 +9,12 @@ class ClientesController {
     // Listar todos los clientes
     public function listar() {
         $clientes = $this->model->get_clientes();
-        require_once "views/clientes/listar.php";
+        require_once "../Views/Cliente/ClienteListarViews.php";
     }
 
     // Mostrar formulario para crear un cliente
     public function crear() {
-        require_once "views/clientes/crear.php";
+        require_once "./Views/Cliente/ClienteCrearView.php";
     }
 
     // Guardar un nuevo cliente

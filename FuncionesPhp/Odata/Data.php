@@ -6,7 +6,7 @@ header('Content-Type: application/json');
 require_once('conn/conn.php');
 require_once('FuncionesPhp/Funciones.php');
 
-$Conectar = conexion();
+// $Conectar = conexion();
 
 
 switch($_GET['accion']){
